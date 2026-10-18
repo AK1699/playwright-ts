@@ -1,0 +1,25 @@
+{
+  "name": "playwright-ts",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/AK1699/playwright-ts#readme",
+  "bugs": {
+    "url": "https://github.com/AK1699/playwright-ts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AK1699/playwright-ts.git"
+  },
+  "license": "ISC",
+  "author": "AKASH KS",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {},
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "allure": "^3.21.0",
+    "allure-playwright": "^3.13.0",
+    "playwright-bdd": "^9.2.1"
+  }
+}

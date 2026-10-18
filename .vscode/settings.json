@@ -1,0 +1,13 @@
+{
+    "cucumberautocomplete.steps": [
+        "tests/**/*.ts"
+    ],
+    "cucumberautocomplete.syncfeatures": "tests/**/*.feature",
+    "cucumberautocomplete.strictGherkinCompletion": false,
+    "cucumberautocomplete.smartSnippets": true,
+    "cucumberautocomplete.stepsInvariants": true,
+    "cucumberautocomplete.gherkinDefinitionPart": "(Given|When|Then)\\(",
+    "files.associations": {
+        "*.feature": "feature"
+    }
+}
