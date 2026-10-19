@@ -3,9 +3,9 @@ import { test } from "playwright-bdd";
 
 test.describe('Demo', () => {
 
-  test.describe('Login with valid "username" & "password"', () => {
+  test.describe('Login with valid "<username>" & "<password>"', () => {
 
-    test('Example #1', async ({ Given, When, Then, And }) => { 
+    test('Login with valid "standard_user" & "secret_sauce"', async ({ Given, When, Then, And }) => { 
       await Given('login into saucedemo'); 
       await Then('fill the valid username "standard_user"'); 
       await And('fill the valid password "secret_sauce"'); 
@@ -13,7 +13,7 @@ test.describe('Demo', () => {
       await Then('the user is logged into saucedemo with valid session'); 
     });
 
-    test('Example #2', async ({ Given, When, Then, And }) => { 
+    test('Login with valid "problem_user" & "secret_sauce"', async ({ Given, When, Then, And }) => { 
       await Given('login into saucedemo'); 
       await Then('fill the valid username "problem_user"'); 
       await And('fill the valid password "secret_sauce"'); 
@@ -21,7 +21,7 @@ test.describe('Demo', () => {
       await Then('the user is logged into saucedemo with valid session'); 
     });
 
-    test('Example #3', async ({ Given, When, Then, And }) => { 
+    test('Login with valid "error_user" & "secret_sauce"', async ({ Given, When, Then, And }) => { 
       await Given('login into saucedemo'); 
       await Then('fill the valid username "error_user"'); 
       await And('fill the valid password "secret_sauce"'); 
@@ -29,7 +29,7 @@ test.describe('Demo', () => {
       await Then('the user is logged into saucedemo with valid session'); 
     });
 
-    test('Example #4', async ({ Given, When, Then, And }) => { 
+    test('Login with valid "visual_user" & "secret_sauce"', async ({ Given, When, Then, And }) => { 
       await Given('login into saucedemo'); 
       await Then('fill the valid username "visual_user"'); 
       await And('fill the valid password "secret_sauce"'); 
@@ -39,9 +39,9 @@ test.describe('Demo', () => {
 
   });
 
-  test.describe('Login with In-valid "username" & "password"', () => {
+  test.describe('Login with In-valid "<username>" & "<password>"', () => {
 
-    test('Example #1', async ({ Given, When, Then, And }) => { 
+    test('Login with In-valid "locked_out_user" & "secret_sauce"', async ({ Given, When, Then, And }) => { 
       await Given('login into saucedemo'); 
       await Then('fill the in-valid username "locked_out_user"'); 
       await And('fill the in-valid password "secret_sauce"'); 
