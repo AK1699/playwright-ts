@@ -16,7 +16,7 @@
   "main": "index.js",
   "scripts": {
     "playwright:ui": "npx bddgen && npx playwright test --ui",
-    "playwright:parallel": "npx bddgen && npx playwright test --workers=20",
+    "playwright:parallel": "npx bddgen && npx playwright test --workers=1",
     "allure:generate": "allure generate allure-results --clean -o allure-report",
     "allure:open": "allure open allure-report",
     "allure:report": "allure generate allure-results --clean -o allure-report && allure open allure-report",
