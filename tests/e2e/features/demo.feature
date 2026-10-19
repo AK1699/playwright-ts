@@ -8,7 +8,7 @@ Feature: Demo
     #     Then the user is logged into OrangeHM with valid session
 
 
-    Scenario Outline:  Login with valid "username" & "password"
+    Scenario Outline:  Login with valid "<username>" & "<password>"
         Given login into saucedemo
         Then fill the valid username "<username>"
         And fill the valid password "<password>"
@@ -22,7 +22,7 @@ Feature: Demo
             | error_user    | secret_sauce |
             | visual_user   | secret_sauce |
 
-    Scenario Outline:  Login with In-valid "username" & "password"
+    Scenario Outline:  Login with In-valid "<username>" & "<password>"
         Given login into saucedemo
         Then fill the in-valid username "<username>"
         And fill the in-valid password "<password>"
